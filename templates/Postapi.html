@@ -1,0 +1,55 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+<style>
+*{
+    background: rgba( 0, 0, 0, 0.85 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    color: 	rgba(212, 175, 55);
+}
+</style>
+<div class="container-fluid">
+    <div class="Card mb-3">
+        <form action="http://93.188.166.5:8000/authusersignup" method="post">
+            <div class="">D1
+                <input type="text" name="id_MemberUser" >
+            </div>
+            <div class="">D2
+                <input type="text" name="username" >
+            </div>
+            <div class="">3
+                <input type="text" name="password" >
+            </div>
+            <div class="">4
+                <input type="text" name="firstname" >
+            </div>
+            <div class="">5
+                <input type="text" name="lastnamep" >
+            </div>
+            <div class="">6
+                <input type="text" name="lastnamem" >
+            </div>
+            <div class="">7
+                <input type="text" name="email" >
+            </div>
+            <div class="">8
+                <input type="text" name="cellphone">
+            </div>
+            <button class="btn btn-dark">SAVE DATA
+
+            </button>
+        </form>
+    </div>
+    
+</div>
+{% endblock %}
